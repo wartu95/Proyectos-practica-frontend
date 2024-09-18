@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+
+  <!-- TailwindCSS CDN para usar las clases de estilo rápidas -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    /* Creamos un fondo ondulado con degradado usando clip-path */
+    .wave-bg {
+      background: linear-gradient(0deg, rgba(227,28,121,1) 0%, rgba(155,46,150,1) 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%); /* Forma de onda */
+    }
+
+    /* Efecto de hover sobre la imagen de perfil, se agranda al pasar el mouse */
+    .profile-image {
+      transition: transform 0.3s ease-in-out; /* Transición suave */
+    }
+
+    .profile-image:hover {
+      transform: scale(1.1); /* Agrandamos la imagen cuando el usuario pasa el mouse */
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <!-- Contenedor principal de la tarjeta -->
+  <div class="bg-white rounded-2xl shadow-lg max-w-sm p-6 relative">
+    
+    <!-- Fondo ondulado de la parte superior -->
+    <!-- Usamos la clase personalizada .wave-bg y la posicionamos en la parte superior -->
+    <div class="wave-bg h-40 w-full absolute top-0 left-0 rounded-t-2xl"></div>
+
+    <!-- Imagen de perfil -->
+    <!-- La imagen se centra y se superpone sobre el fondo ondulado -->
+    <div class="relative z-10 flex justify-center -mt-16">
+      <!-- Imagen circular con borde blanco -->
+      <img src="https://via.placeholder.com/100" alt="Profile Picture"
+        class="profile-image w-32 h-32 rounded-full border-4 border-white shadow-lg object-cover">
+    </div>
+
+    <!-- Sección de nombre y usuario -->
+    <div class="text-center mt-4">
+      <!-- Nombre del usuario -->
+      <h2 class="text-2xl font-bold text-gray-800">Johnny Rogers</h2>
+      <!-- Nombre de usuario debajo del nombre principal -->
+      <p class="text-gray-500">@jonnyrogers</p>
+    </div>
+
+    <!-- Íconos de redes sociales -->
+    <!-- Flexbox para alinear los íconos de manera horizontal -->
+    <div class="flex justify-center mt-4 space-x-4">
+      <!-- Cada ícono es un enlace que lleva a la red social correspondiente -->
+      <!-- Aquí puedes cambiar los href con los enlaces reales -->
+      <a href="#" class="text-gray-700 hover:text-pink-500">
+        <!-- Facebook -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" class="w-6">
+      </a>
+      <a href="#" class="text-gray-700 hover:text-pink-500">
+        <!-- LinkedIn -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" class="w-6">
+      </a>
+      <a href="#" class="text-gray-700 hover:text-pink-500">
+        <!-- Twitter (X) -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_X_%28Twitter%29.png" class="w-6">
+      </a>
+      <a href="#" class="text-gray-700 hover:text-pink-500">
+        <!-- Instagram -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" class="w-6">
+      </a>
+      <a href="#" class="text-gray-700 hover:text-pink-500">
+        <!-- Dribbble -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Dribbble_logo.png" class="w-6">
+      </a>
+    </div>
+
+    <!-- Descripción del perfil debajo de los íconos de redes sociales -->
+    <p class="text-center text-gray-600 mt-4 px-6">
+      Crafting brand and communication strategies, creating visual designs, leading art direction, and capturing
+      portraits through photography.
+    </p>
+
+    <!-- Botones de Follow y Message -->
+    <!-- Flexbox para alinear los botones horizontalmente -->
+    <div class="flex justify-around mt-6">
+      <!-- Botón Follow con color de fondo rosa y efecto hover -->
+      <button class="bg-pink-500 text-white px-6 py-2 rounded-full hover:bg-pink-600 transition">
+        Follow
+      </button>
+      <!-- Botón Message con borde gris y fondo blanco -->
+      <button class="border-2 border-gray-300 text-gray-700 px-6 py-2 rounded-full hover:bg-gray-100 transition">
+        Message
+      </button>
+    </div>
+  </div>
+
+  <!-- FontAwesome para los íconos de redes sociales (si quisieras usar íconos en vez de imágenes) -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
+t

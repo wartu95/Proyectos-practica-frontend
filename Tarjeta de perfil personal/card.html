@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Our unique tag to identify the solution -->
+  <bds />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card Wartudev</title>
+  <link rel="stylesheet" href="card.css">
+
+  <!-- TailwindCSS for styling -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen">
+
+    <div class=" bg-white rounded-2xl shadow-lg max-w-md p-6 relative">
+
+        <div class="wave-bg-2 h-40 w-full absolute top-0 left-0 rounded-t-2xl"></div>
+        <div class="wave-bg h-40 w-full absolute top-0 left-0 rounded-t-2xl"></div>
+
+        <div class="relative z-10 flex justify-center -m-16  pt-14  ">
+            <img src="https://avatars.githubusercontent.com/u/113658802?v=4" alt="Foto de perfil" class="profile-image  w-20 h-20 rounded-full border-4 border-white shadow-lg object-cover">
+        </div>
+       
+        <div class="text-center mt-6 relative  pt-16">
+            <h2 class="text-2xl font-bold text-gray-900">Wellington Armas</h2>
+            <p class="text-gray-600">@Wartudev</p>
+        </div>
+
+        <div class="flex justify-center mt-6 space-x-4">
+
+            <a href="https://github.com/wartu95" class="text-gray-700">
+                <img src="https://img.icons8.com/ios/50/github--v1.png" alt="Github" class="w-6 redes-sociales" >
+            </a>
+            <a href="https://www.linkedin.com/in/wartudev/" class="text-gray-700">
+                <img src="https://img.icons8.com/ios/50/linkedin.png" alt="Linkedin" class="w-6 redes-sociales" >
+            </a>
+            <a href="https://www.facebook.com/" class="text-gray-700">
+                <img src="https://img.icons8.com/ios/50/facebook-new.png" alt="Facebook" class="w-6 redes-sociales" >
+            </a>
+            <a href="https://x.com/Wellingjunior1" class="text-gray-700">
+                <img src="https://img.icons8.com/ios/50/x.png" alt="X" class="w-6 redes-sociales" >
+                
+            </a>
+            <a href="https://www.instagram.com/thewartech/" class="text-gray-700">
+                <img src="https://img.icons8.com/ios/50/instagram-new--v1.png" alt="Instagran" class="w-6 redes-sociales" >
+            </a>
+        </div>
+
+        <p class="text-center text-gray-600 mt-6 px-6">Lifelong learner who stays up-to-date with the latest web technologies and trends. Eager to continuously improve skills and explore new opportunities</p>
+
+
+        <div class="flex justify-around mt-6">
+            <button class="Follow bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-gray-500 transition">Follow</button>
+            <button class="border-2 border-gray-300 text-gray-700 px-6 py-2 rounded-full hover:bg-gray-300 transition">Message</button>
+        </div>
+    </div>
+
+<script src="card.js"></script>
+</body>
+
+</html>
